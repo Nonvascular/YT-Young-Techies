@@ -63,3 +63,7 @@ nav.bg-light {
     --bs-btn-disabled-border-color: #ffffff;
     --bs-gradient: none;
 }
+
+.nav-item {
+    margin: 3px;
+}
