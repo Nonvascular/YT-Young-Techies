@@ -36,6 +36,7 @@ nav.bg-light {
 }
 
 .team_text {
+    color: blue;
     border-radius: 30px 30px 30px 30px;
     border: 8px solid #fff;
     text-align: center;
@@ -46,4 +47,9 @@ nav.bg-light {
     padding: 10px;
     margin: 20px;
     max-width: 40% 
+}
+
+.card {
+    background-color: #fff;
+    color: black;
 }
