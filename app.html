@@ -1,75 +1,82 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<!-- Head section -->
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>YT/app</title>
-    <link rel="html" href="index.html">
-    <link rel="html" href="jari.html">
-    <link rel="html" href="soncerá.html">
-    <link rel="html" href="miqueas.html">
-    <link rel="html" href="contactus.html">
-    <link rel="html" href="app.html">
-    <link rel="html" href="aboutus.html">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>list</title>
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="1894.6">
+
+    <!-- CSS Style section -->
+    <style type="text/css">
+        Body {
+            background-color: burlywood;
+            font-size: 30pt;
+        }
+
+        input[type="button"] {
+            background-color: cadetblue;
+        }
+
+        nav {
+            background-color: cadetblue;
+            font-size: 15pt;
+        }
+    </style>
 </head>
 
+<!-- Body Section-->
+
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">YT</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="btn btn-outline-success" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            About us
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!--About us Dropdown-->
-                            <li><a class="dropdown-item" href="jari.html">Jari</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="soncerá.html">Soncerá</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="miqueas.html">Miqueas</a></li>
-                        </ul>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-success2" class="nav-link active" aria-current="page" href="contactus.html">Contact us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-success3" class="nav-link active" aria-current="page" href="app.html">App</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
+    <p> Special To Do list</p>
+    <br>
+    <input type="text" id="box" value="Type here to add task" />
+    <br>
+    <input type="button" value="Add Item" onclick="addItem();" />
+    <br>
+    <div id="list"></div>
 
+    <!-- Javascript Section: HTML Comment type-->
+    <script>
+        // JavaScript comment
+        // NOTE: Comment syntax changes here! We are in javascript now
 
+        // addItem function:
+        //  This will add an item to the list of tasks
+        function addItem() {
+            var newItem = document.createElement("div");
+            newItem.innerHTML = document.getElementById("box").value;
+            newItem.onclick = removeItem;
+            document.getElementById("list").appendChild(newItem);
+        }
 
+        // removeItem function:
+        //   This will remove an item from the task list
+        function removeItem() {
+            document.getElementById("list").removeChild(this);
+        }
 
-
-
-
-
-
-
-
+    </script>
+    <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreenf
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDlAmY4-CBJkuEpGVEWqd1Iiv9uGOvXbI&q=Puebla,MX">
+    </iframe>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+Message sw-arts-cohort6
