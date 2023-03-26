@@ -94,17 +94,62 @@
 
     </script>
     <br>
-    
+
     <br>
     <iframe width="600" height="500" style="border: 7000px" loading="lazy" allowfullscreenf
         referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDlAmY4-CBJkuEpGVEWqd1Iiv9uGOvXbI&q=Puebla,MX">
     </iframe>
-    <iframe width="600" height="500" style="border: 700;" loading="lazy" allowfullscreenf
-    referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDlAmY4-CBJkuEpGVEWqd1Iiv9uGOvXbI&q=Dubai,Saudi-Arabia">
-</iframe>
+    <!-- Javascript Section: HTML Comment type-->
+    <script>
+        // JavaScript comment
+        // NOTE: Comment syntax changes here! We are in javascript now
 
+        // addItem function:
+        //  This will add an item to the list of tasks
+        function addItem() {
+            var newItem = document.createElement("div");
+            newItem.innerHTML = document.getElementById("box").value;
+            newItem.onclick = removeItem;
+            document.getElementById("list").appendChild(newItem);
+        }
+
+        // removeItem function:
+        //   This will remove an item from the task list
+        function removeItem() {
+            document.getElementById("list").removeChild(this);
+        }
+
+    </script>
+    <br>
+
+    <br>
+    <iframe width="600" height="500" style="border: 700;" loading="lazy" allowfullscreenf
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDlAmY4-CBJkuEpGVEWqd1Iiv9uGOvXbI&q=Dubai,Saudi-Arabia">
+    </iframe>
+    <!-- Javascript Section: HTML Comment type-->
+    <script>
+        // JavaScript comment
+        // NOTE: Comment syntax changes here! We are in javascript now
+
+        // addItem function:
+        //  This will add an item to the list of tasks
+        function addItem() {
+            var newItem = document.createElement("div");
+            newItem.innerHTML = document.getElementById("box").value;
+            newItem.onclick = removeItem;
+            document.getElementById("list").appendChild(newItem);
+        }
+
+        // removeItem function:
+        //   This will remove an item from the task list
+        function removeItem() {
+            document.getElementById("list").removeChild(this);
+        }
+
+    </script>
+    <br>
 </body>
 
 </html>
